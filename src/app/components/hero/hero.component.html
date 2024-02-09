@@ -1,0 +1,63 @@
+<div class="hero-container">
+  <carousel
+    [showIndicators]="false"
+    [interval]="5000"
+    [isAnimated]="true"
+    class="carousel-container"
+  >
+    <slide>
+      <img
+        class="sliderImage"
+        src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-1.jpg"
+        alt="first slide"
+      />
+    </slide>
+    <slide>
+      <img
+        class="sliderImage"
+        src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-2.jpg"
+        alt="second slide"
+      />
+    </slide>
+    <slide>
+      <img
+        class="sliderImage"
+        src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-3.jpg"
+        alt="first slide"
+      />
+    </slide>
+    <slide>
+      <img
+        class="sliderImage"
+        src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-4.jpg"
+        alt="second slide"
+      />
+    </slide>
+  </carousel>
+  <div class="container">
+    <div class="left-side">
+      <img
+        src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg"
+      />
+      <span>Dakikalar içinde Kapında</span>
+    </div>
+    <div class="right-side">
+      <h4 class="title">Giriş yap veya kayıt ol</h4>
+      <div class="phone-number">
+        <div class="country">selectBox</div>
+        <div class="number">
+          <span class="numberText" [ngClass]="{ active: isFocused }"
+            >Telefon Numarası</span
+          >
+          <input
+            class="numberInput"
+            (focus)="onInputFocus()"
+            (blur)="onInputBlur()"
+            maxlength="10"
+          />
+        </div>
+      </div>
+      <button class="continueWithPhone">Telefon numarası ile devam et</button>
+    </div>
+  </div>
+</div>

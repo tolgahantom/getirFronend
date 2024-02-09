@@ -1,0 +1,13 @@
+<div class="container">
+  <h3 class="categories-title">Kategoriler</h3>
+  <div class="category-list">
+    <a href="#" class="category-list-item" *ngFor="let category of cateogries">
+      <img
+        class="categoy-list-item-image"
+        src="{{ category.image }}"
+        alt="{{ category.title }}"
+      />
+      <span class="categoy-list-item-title">{{ category.title }}</span>
+    </a>
+  </div>
+</div>
