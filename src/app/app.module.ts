@@ -7,6 +7,7 @@ import { CampaingsComponent } from './components/campaings/campaings.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { CategoryComponent } from './components/category/category.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CardsComponent } from './components/cards/cards.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     CampaingsComponent,
     HeroComponent,
     CategoryComponent,
+    CardsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, CarouselModule.forRoot()],
   providers: [],
