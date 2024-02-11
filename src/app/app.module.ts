@@ -8,6 +8,8 @@ import { HeroComponent } from './components/hero/hero.component';
 import { CategoryComponent } from './components/category/category.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CardsComponent } from './components/cards/cards.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { FooterMenuComponent } from './components/footer-menu/footer-menu.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { CardsComponent } from './components/cards/cards.component';
     HeroComponent,
     CategoryComponent,
     CardsComponent,
+    FooterComponent,
+    FooterMenuComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, CarouselModule.forRoot()],
   providers: [],

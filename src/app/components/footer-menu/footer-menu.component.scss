@@ -1,0 +1,45 @@
+.container {
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 0 0 20px;
+  border-bottom: 1px solid rgb(243 244 246);
+
+  .footer-menu-items {
+    padding: 40px 0 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+
+    .footer-menu-item {
+      .footer-menu-item-title {
+        color: var(--primary-brand-color);
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+
+      .footer-menu-item-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .qrcode {
+        height: 100%;
+
+        a {
+          padding: 16px;
+          background-color: #fff;
+
+          img {
+            width: 72px;
+            height: 84px;
+          }
+        }
+      }
+    }
+  }
+}
