@@ -10,6 +10,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CardsComponent } from './components/cards/cards.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FooterMenuComponent } from './components/footer-menu/footer-menu.component';
+import { MatSelectCountryModule } from '@angular-material-extensions/select-country';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,12 @@ import { FooterMenuComponent } from './components/footer-menu/footer-menu.compon
     FooterComponent,
     FooterMenuComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, CarouselModule.forRoot()],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    CarouselModule.forRoot(),
+    MatSelectCountryModule.forRoot('de'),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

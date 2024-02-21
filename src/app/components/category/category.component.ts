@@ -12,6 +12,5 @@ export class CategoryComponent {
 
   constructor(private CategoryService: CategoryService) {
     this.cateogries = this.CategoryService.getCategories();
-    console.log(this.cateogries);
   }
 }

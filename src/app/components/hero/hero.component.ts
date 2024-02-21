@@ -8,13 +8,17 @@ import { Country } from '../../models/country';
 })
 export class HeroComponent {
   isFocused: boolean = false;
+  isModalOpen: boolean = false;
 
-  countries: Country[] = [
-    { nameCode: 'TR', phoneCode: '+90', flagCode: 'flagTR' },
-    { nameCode: 'UK', phoneCode: '+44', flagCode: 'flagUK' },
-    { nameCode: 'US', phoneCode: '+1', flagCode: 'flagUS' },
-    { nameCode: 'DE', phoneCode: '+49', flagCode: 'flagDE' },
+  countries = [
+    { name: 'TURKEY', code: 'TR', phone: '+90' },
+    { name: 'UNITED STATES of AMERICA', code: 'USA', phone: '+1' },
+    { name: 'GERMANY', code: 'DE', phone: '+50' },
+    { name: 'ITALY', code: 'IT', phone: '+7' },
+    { name: 'INDIAN', code: 'IN', phone: '+15' },
   ];
+
+  activeCountry: Country = this.countries[0];
 
   constructor() {}
 
@@ -26,5 +30,9 @@ export class HeroComponent {
 
   onInputBlur() {
     this.isFocused = false;
+  }
+
+  changeActiveCountry(country: Country) {
+    this.activeCountry = country;
   }
 }

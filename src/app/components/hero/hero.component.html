@@ -44,7 +44,26 @@
     <div class="right-side">
       <h4 class="title">Giriş yap veya kayıt ol</h4>
       <div class="phone-number">
-        <div class="country">selectBox</div>
+        <div class="country-container" (click)="isModalOpen = !isModalOpen">
+          <img
+            src="../../../assets/{{ activeCountry.code }}.png"
+            class="country-image"
+          />
+          <span>{{ activeCountry.phone }}</span>
+          <span class="icon" [ngClass]="{ active: isModalOpen }"><</span>
+          <ul class="countries" *ngIf="isModalOpen">
+            @for (country of countries; track $index) { @if(country !=
+            activeCountry){
+            <li class="country" (click)="changeActiveCountry(country)">
+              <img
+                src="../../../assets/{{ country.code }}.png"
+                class="country-image"
+              />
+              <span>{{ country.code }}</span>
+            </li>
+            } }
+          </ul>
+        </div>
         <div class="number">
           <span class="numberText" [ngClass]="{ active: isFocused }"
             >Telefon Numarası</span
