@@ -1,0 +1,29 @@
+<app-hero [slides]="slides"></app-hero>
+<app-category [cateogries]="categories"></app-category>
+<div class="advert container">
+  <div class="advert-text">
+    <h2>Getir'i indir!</h2>
+    <p>Market ihtiyaçlarını kapına kadar getirelim</p>
+    <div class="logos">
+      <img
+        class="logo"
+        src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg"
+      />
+      <img
+        class="logo"
+        src="https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg"
+      />
+      <img
+        class="logo"
+        src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg"
+      />
+    </div>
+  </div>
+  <div class="advert-image">
+    <img
+      src="https://cdn.getir.com/getirweb-images/common/landing/marketPhoneLanding.png"
+      alt=""
+    />
+  </div>
+</div>
+<app-cards [cardList]="cardListFromHomePage"></app-cards>

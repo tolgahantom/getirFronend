@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Country } from '../../models/country';
 
 @Component({
@@ -7,6 +7,8 @@ import { Country } from '../../models/country';
   styleUrl: './hero.component.scss',
 })
 export class HeroComponent {
+  @Input() slides: any[] = [];
+
   isFocused: boolean = false;
   isModalOpen: boolean = false;
 

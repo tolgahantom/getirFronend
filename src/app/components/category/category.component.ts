@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { Category } from '../../models/category';
 import { CategoryService } from '../../services/category.service';
 
@@ -8,9 +8,5 @@ import { CategoryService } from '../../services/category.service';
   styleUrls: ['./category.component.scss'],
 })
 export class CategoryComponent {
-  cateogries: Category[] = [];
-
-  constructor(private CategoryService: CategoryService) {
-    this.cateogries = this.CategoryService.getCategories();
-  }
+  @Input() cateogries: Category[] = [];
 }

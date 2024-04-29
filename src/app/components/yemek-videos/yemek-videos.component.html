@@ -1,28 +1,27 @@
 <div class="hero-container">
-  <carousel
-    [showIndicators]="false"
-    [interval]="5000"
-    [isAnimated]="true"
-    class="carousel-container"
-  >
-    @for (item of slides; track $index) {
-    <slide>
-      <img
-        class="sliderImage"
-        src="{{ item.image }}"
-        alt="slide {{ $index }}"
-      />
-    </slide>
-    }
-  </carousel>
+  <div class="carousel-container">
+    <video src="{{ activeVideo }}" autoplay class="sliderImage"></video>
+  </div>
   <div class="container">
-    <div class="left-side">
-      <img
-        src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg"
-      />
-      <span>Dakikalar içinde Kapında</span>
-    </div>
     <div class="right-side">
+      <h4 class="title">Adresine getiren restoranları gör</h4>
+      <div class="location" (click)="openModal(locationModal)">
+        <div class="location-input-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            class="location-input"
+            placeholder="Sokağını veya posta kodunu arat"
+          />
+        </div>
+        <div class="find-location">
+          <i class="fa-solid fa-location-crosshairs"></i>
+          <span>Konumunu bul</span>
+        </div>
+      </div>
+      <div class="or">
+        <span>veya</span>
+      </div>
       <h4 class="title">Giriş yap veya kayıt ol</h4>
       <div class="phone-number">
         <div class="country-container" (click)="isModalOpen = !isModalOpen">
@@ -61,3 +60,18 @@
     </div>
   </div>
 </div>
+
+<ng-template #locationModal>
+  <div class="modal-header locationModal">
+    <h4 class="modal-title pull-left">Modal</h4>
+    <button
+      type="button"
+      class="btn-close close pull-right"
+      aria-label="Close"
+      (click)="modalRef?.hide()"
+    >
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">This is a modal.</div>
+</ng-template>

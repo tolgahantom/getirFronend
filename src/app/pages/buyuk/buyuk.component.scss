@@ -1,0 +1,41 @@
+.advert {
+  background-image: url("https://cdn.getir.com/getirweb-images/common/illustration/doodle.png");
+  width: 100%;
+  margin: 24px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  border-radius: 8px;
+  background-color: var(--primary-brand-color);
+
+  .advert-text {
+    padding-left: 48px;
+    color: #fff;
+
+    h2 {
+      font-weight: bold;
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-top: 12px;
+    }
+  }
+
+  .logos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+
+    .logo {
+      cursor: pointer;
+    }
+  }
+}
+
+.container {
+  max-width: 1232px;
+}

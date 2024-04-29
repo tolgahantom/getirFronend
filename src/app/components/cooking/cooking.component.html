@@ -1,0 +1,19 @@
+<div class="cooking container">
+  <div class="text">Mutfaklar</div>
+  <carousel
+    class="carousel"
+    [itemsPerSlide]="itemsPerSlide"
+    [singleSlideOffset]="singleSlideOffset"
+    [startFromIndex]="0"
+    [interval]="0"
+    [isAnimated]="true"
+    [showIndicators]="false"
+  >
+    <slide *ngFor="let slide of slides; let index = index">
+      <div class="card">
+        <img src="{{ slide.image }}" />
+        <h5 class="card-title">{{ slide.text }}</h5>
+      </div>
+    </slide>
+  </carousel>
+</div>
