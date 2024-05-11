@@ -14,6 +14,36 @@ nav {
     align-items: center;
     justify-content: space-between;
 
+    .logos {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      width: 100%;
+      height: 100%;
+
+      .logo {
+        padding: 8px 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        filter: invert(17%) sepia(0%) saturate(10%) hue-rotate(152deg)
+          brightness(98%) contrast(89%);
+
+        &.active {
+          background-color: rgba(255, 255, 255, 0.1);
+          filter: none;
+        }
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          cursor: pointer;
+        }
+
+        img {
+          height: 16px;
+        }
+      }
+    }
+
     .items {
       display: flex;
       gap: 32px;

@@ -1,0 +1,63 @@
+.slider {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      90deg,
+      rgba(93, 62, 188, 0.8) 60%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    url(https://cdn.getir.com/getirweb_images/popup_splash.png);
+
+  .texts {
+    color: #fff;
+    max-width: 1232px;
+    padding-right: 500px;
+    font-size: 24px;
+    position: relative;
+    font-weight: bold;
+  }
+}
+
+.advert {
+  background-image: url("https://cdn.getir.com/getirweb-images/common/illustration/doodle.png");
+  width: 100%;
+  margin: 24px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  border-radius: 8px;
+  background-color: var(--primary-brand-color);
+
+  .advert-text {
+    padding-left: 48px;
+    color: #fff;
+
+    h2 {
+      font-weight: bold;
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-top: 12px;
+    }
+  }
+
+  .logos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+
+    .logo {
+      cursor: pointer;
+    }
+  }
+}

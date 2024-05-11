@@ -17,6 +17,8 @@ import { YemekVideosComponent } from './components/yemek-videos/yemek-videos.com
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { CookingComponent } from './components/cooking/cooking.component';
 import { BuyukComponent } from './pages/buyuk/buyuk.component';
+import { CarsiComponent } from './pages/carsi/carsi.component';
+import { SuComponent } from './pages/su/su.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { BuyukComponent } from './pages/buyuk/buyuk.component';
     YemekVideosComponent,
     CookingComponent,
     BuyukComponent,
+    CarsiComponent,
+    SuComponent,
   ],
   imports: [
     BrowserModule,
